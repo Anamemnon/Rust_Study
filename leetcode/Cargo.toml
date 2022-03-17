@@ -4,4 +4,5 @@ members = [
     "easy/_0001_two_Sum",
     "medium/_0002_add_two_numbers",
     "medium/_0003_longest_substr",
+    "hard/_0004_median_of_two_sorted_arrays",
 ]
