@@ -1,5 +1,6 @@
 [workspace]
 
 members = [
-    "easy/_0001_two_Sum"
+    "easy/_0001_two_Sum",
+    "easy/_0002_add_two_numbers",
 ]
