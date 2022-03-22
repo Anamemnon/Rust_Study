@@ -33,7 +33,7 @@ impl Map {
                         );
                     }
                     TileType::Wall => {
-                        ctx.set(x, y, GREEN, BLACK, to_cp437('#'),
+                        ctx.set(x, y, GREY, BLACK, to_cp437('#'),
                         );
                     }
                 }
