@@ -13,16 +13,18 @@ fn main() {
     let i16_:   i16   = -32768;
     let isize_: isize =  9223372036854775807;
     let usize_: usize =  18446744073709551615;
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
 
     println!("i8 {}",    i8_);
     println!("u8 {}",    u8_);
     println!("i16 {}",   i16_);
     println!("isize {}", isize_);
     println!("usize {}", usize_);
+    println!("tuple {} {} {}", tup.0, tup.1, tup.2);
 
     let     x = [1, 2, 3]; // x: [i32; 3]
     //let mut y = [4, 5, 6]; // y: [i32; 3]
-    let     a = [0; 20];   // a: [i32; 20]
+    let     a = [0; 3];   // a: [0, 0, 0]
 
     println!("x.len() = {}", x.len());
     //println!("y.len() = {}", y.len());

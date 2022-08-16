@@ -8,6 +8,18 @@ fn main() {
         }
     }
 
+    let mut counter = 0;
+
+    let result = loop {
+        counter += 1;
+
+        if counter == 10 {
+            break counter * 2;
+        }
+    };
+
+    println!("The result is {result}");
+
     a = 1;
     while a != 5 {
         println!("while: a = {}", a);
@@ -16,6 +28,10 @@ fn main() {
 
     for i in 10..15 {
         println!("for: i = {}", i);
+    }
+
+    for number in (1..4).rev() {
+        println!("{number}!");
     }
     
     for (index, value) in (5..10).enumerate() {
