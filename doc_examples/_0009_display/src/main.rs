@@ -58,6 +58,21 @@ impl Display for Color {
     }
 }
 
+#[derive(Debug)]
+struct Matrix(f64, f64, f64, f64);
+
+impl Display for Matrix {
+    fn fmt(&self, f: &mut Formatter<'_>) -> fmt::Result {
+        write!(f, "( {} {} )\n( {} {} )", self.0, self.1, self.2, self.3)
+    }
+}
+
+impl Matrix {
+    fn transpose(self) -> Matrix {
+        Matrix(self.0, self.2, self.1, self.3)
+    }
+}
+
 fn main() {
     println!("{0}", Structure(10));
 
@@ -73,4 +88,9 @@ fn main() {
         // типажа fmt::Display
         println!("{}", *color)
     }
+
+    let mut matrix = Matrix(1.1, 1.2, 2.1, 2.2);
+    println!("{}", matrix);
+    matrix = matrix.transpose();
+    print!("{}", matrix);
 }
