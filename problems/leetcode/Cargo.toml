@@ -3,6 +3,7 @@
 members = [
     "easy/_0001_two_sum",
     "easy/_2099",
+    "easy/_2114",
     "easy/_2235",
     "medium/_0002_add_two_numbers",
     "medium/_0003_longest_substr",
