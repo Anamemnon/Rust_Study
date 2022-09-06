@@ -2,6 +2,7 @@
 
 members = [
     "easy/_0001_two_sum",
+    "easy/_0938",
     "easy/_1313",
     "easy/_1342",
     "easy/_1365",
